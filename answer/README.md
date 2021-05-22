@@ -23,3 +23,15 @@ for i in range(N):
     y2 = r * sin(s2) + cy
     draw.line((x1, y1, x2, y2))
 ```
+
+```py
+def collatz(i):
+    print(i)
+    while (i!=1):
+        if (i%2==0):
+            i = i // 2
+        else:
+            i = i * 3 + 1
+        print(i)
+
+```
