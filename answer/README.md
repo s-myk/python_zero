@@ -35,3 +35,14 @@ def collatz(i):
         print(i)
 
 ```
+
+```py
+def collatz_graph(i, edges):
+    while (i!=1 and i!=3):
+        j = i
+        if (i%2==0):
+            i = i // 2
+        else:
+            i = i * 3 + 3
+        edges.add((j, i))
+```
